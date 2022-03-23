@@ -9,4 +9,4 @@ sources:
     handler:
       grpc:
         endpoint: localhost:50052
-        protoFilePath: ./src/grpc-mutation/service.proto
+        useReflection: true
