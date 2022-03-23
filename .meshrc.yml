@@ -1,0 +1,12 @@
+sources:
+  - name: gRPC Example
+    handler:
+      grpc:
+        endpoint: localhost:50051
+        protoFilePath: ./src/grpc/proto/service.proto
+
+  - name: gRPC Reflection Example
+    handler:
+      grpc:
+        endpoint: localhost:50052
+        protoFilePath: ./src/grpc-mutation/service.proto

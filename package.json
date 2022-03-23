@@ -1,0 +1,22 @@
+{
+  "name": "graphql-mesh-example",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "grpc:start": "cd src/grpc && yarn start",
+    "grpc-reflection:start": "cd src/grpc-reflection && yarn start",
+    "mesh:start": "mesh dev",
+    "start": "concurrently \"yarn grpc:start\" \"yarn grpc-reflection:start\" \"yarn mesh:start\""
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@graphql-mesh/cli": "^0.64.1",
+    "@graphql-mesh/grpc": "^0.21.1",
+    "@graphql-mesh/runtime": "^0.31.4",
+    "graphql": "^16.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
